@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Больбот](https://up.htmlacademy.ru/htmlcss/31/user/1706453).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко] (https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
