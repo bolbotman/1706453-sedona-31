@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="img/Favicon.ico" width="32" height="32">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
-  <body>
-
-    
-    <header>
-      <nav>
-        <a><img src="img/logo.png" width="138" height="70" alt="Седона"></a>
-        <ul>
+  <body class="page-body">
+<header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.png" width="138" height="70" alt="Седона"></a>
+          <div class="main-navigation-wrapper">
+          <div class="container">
+          <ul class="site-navigation">
           <li><a href="#info.html">Информация</a></li>
           <li><a href="#foto.html">Фото и видео</a></li>
           <li><a href="#map.html">Карта штата</a></li>
           <li><a href="#hotel.html">Гостиницы</a></li>
         </ul>
-      </nav>
+        <a class="background">
+        <img src="img/background photo.jpg" width="1200" height="510"></a>
+        </nav>
     </header>
-    <main>
+    <main class="heading">
       <h1>SEDONA</h1>
-      <section>
+      <section class="features">
         <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ul>
-          <li><h3>Настоящий
+        <ul class="features-list">
+          <li class="features-item">
+            <h3>Настоящий
             городок</h3>
           <p>— №1 —</p>
-        <p>Седона — не аттракцион для туристов, там
-          течёт своя жизнь</p>
+        <p>Седона — не аттракцион для туристов, там</p>
+          <p>течёт своя жизнь</p>
           <img src="img/image.jpg" width="800" height="256" alt="image">
-        </li>
-          
+        </li></ul>
+        <ul class="features-list2">
+          <li class="features-item2">
             <img src="img/icon-1_1.ico"  width="74" height="69" alt="home">
             <li><h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -48,13 +56,16 @@
             <p>Не только китайского, но и местного производства!</p>
           </li>
           <img src="img/image (1).jpg" width="800" height="256" alt="image2">
-          <li>
+          <li></ul>
+            <ul class="features-list">
+            <li class="features-item">
             <h3>Там есть Мост дьявола</h3>
           <p>— №2 —</p>
-        <p>Да, по нему можно пройти! Если конечно
-          вы осмелитесь</p>
-        </li>
-          <li>
+        <p>Да, по нему можно пройти! Если конечно</p>
+          <p>вы осмелитесь</p>
+        </li></ul>
+          <ul class="features-list3">
+          <li class="features-item3">
             <h3>небольшая площадь</h3>
             <p>— №3 —</p>
             <p>все достопримечательности находятся очень близко</p>
@@ -71,37 +82,37 @@
           </li>
         </ul>
       </section>
-      <section> 
+      <section class="info"> 
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="submit">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <button class="buton-search" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         <br><img src="img/map.png" width="1199" height="594" alt="map"></br>
       </section>
-       </main>
-       <footer>
-         <section>
+      </main>
+       <footer class="main-footer">
+         <section class="footer-contacts">
         <h2>Контактная Информация</h2>
         <p>#visitSEDONA</p>
-         <p><a href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
+         <p><a class="footer-phone" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
          </p>
        </section>
-       <section>
+       <section class="footer-social">
          <h2>Мы в соц.сетях</h2>
          <ul>
           <li>
-            <a href="#">Twitter</a>
+            <a class="social-button" href="#">Twitter</a>
           </li>
           <li>
-            <a href="#">Facebook</a>
+            <a class="social-button" href="#">Facebook</a>
           </li>
           <li>
-            <a href="#">Youtube</a>
+            <a class="social-button" href="#">Youtube</a>
           </li>
         </ul>
-      </section>
+      </section class="footer-copyright">
         <p>
           Website by 
-          <a href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
        
        </footer>
