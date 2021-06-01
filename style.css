@@ -69,6 +69,7 @@ body {
   .background {
    background-position: top center;
   }
+ 
   
   /* Heading */
   .heading {
@@ -122,6 +123,18 @@ color: var(--basic-black);
 }
 .footer-social {
 color: var(--basic-black);
-
 }
-
+.inner-page  .main-header {
+  background-color: var(--basic-white);
+}
+.filters {
+  list-style: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+.social-title {
+  list-style: none;
+}
