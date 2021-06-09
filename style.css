@@ -12,7 +12,7 @@
   /* Global */
 
 
-body {
+ .page-body {
     min-width: 960px;
     margin: 0;
     padding: 0;
@@ -26,6 +26,11 @@ body {
     background-image: url("");
     background-position: top center;
     background-repeat: no-repeat;
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
   }
   a {
     text-decoration: none;
@@ -35,18 +40,25 @@ body {
     height: auto;
   }
   .main-navigation {
+    display: grid;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     color: var(--basic-black);
     background-color: transparent;
   }
-  
+  .main-header-bar {
+    background-color: var(--basic-brown);
+  }
   .main-navigation-wrapper {
     background-color: var(--basic-white);
+    display: grid;
+    grid-template-columns: 1fr min-content;
   }
   .site-navigation {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
   .site-navigation-current a:not([href]) {
     background-color: var(--basic-black);
@@ -80,28 +92,52 @@ body {
 /* Features */
 .features {
   text-align: center;
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+  margin-bottom: 80px;
 }
  .features-list {
     list-style: none;
-    background-image: url("img/Rectangle.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    color: var(--basic-white)
+    color: var(--basic-white);
+    margin: 0;
+    padding: 0;
     }
-    .features-list2 {
+    .features-list--second {
     list-style: none;
+    margin: 0;
+    padding: 0;
     }
-  .features-list3 {
+    .features-list--first {
+    list-style: none;
+    color: var(--basic-white);
+    margin: 0;
+    padding: 0;
+
+    }
+  .features-list--third {
     background-image: url("img/Rectangle2.png");
     background-position: top center;
     background-repeat: no-repeat;
     list-style: none;
+    margin: 0;
+    padding: 0;
+  
   }
   
-  .feature-item {
+  .features-item {
     text-align: center;
+    outline: 5px solid rgba(0, 255, 255 , 0.3);
+    justify-self: start;
+    background-image: url("img/Rectangle.png");
+    }
+    .features-item--first {
+    text-align: center;
+    outline: 5px solid rgba(0, 255, 255 , 0.3);
+    justify-self: start;
+    background-image: url("img/Rectangle.png");
+      
+    }
     
-     }
+   
   
   .feature-item h3 {
     font-size: 21px;
@@ -119,7 +155,9 @@ body {
 .main-footer {
 text-align: center;
 list-style: none;
-color: var(--basic-black);  
+color: var(--basic-black);
+outline: 5px solid rgba(255, 0, 0, 0.7);
+outline-offset: -5px;  
 }
 .footer-social {
 color: var(--basic-black);
@@ -137,4 +175,36 @@ color: var(--basic-black);
 }
 .social-title {
   list-style: none;
+ 
 }
+
+/* Grid */
+
+.page {
+  height: 100%;
+}
+/* Main header */
+
+.main-header {
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+/* Logo */
+
+.main-header-logo {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+  justify-self: center;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.features-list {
+  display: grid;
+}
+
+
